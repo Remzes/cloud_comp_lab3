@@ -10,11 +10,12 @@
     color: #000 !important;
 }
 
-.add_new_order #food_select {
-    line-height: 90px;
+.food_select li {
+    line-height: 90px !important;
+    min-height: 90px !important;
 }
 
-.add_new_order #food_select img {
+.food_select li img {
     height: 80px !important;
     width: 80px !important;
 }

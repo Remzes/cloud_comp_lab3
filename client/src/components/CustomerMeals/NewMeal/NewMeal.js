@@ -40,7 +40,7 @@ class NewMeal extends React.Component {
                         <div className="file-field input-field">
                             <div className="btn">
                                 <span>File</span>
-                                <input type="file" id="image_file" name="image_file"/>
+                                <input type="file" id="image_file" name="image_file" required={true}/>
                             </div>
                             <div className="file-path-wrapper">
                                 <input className="file-path validate" type="text"/>
@@ -51,14 +51,14 @@ class NewMeal extends React.Component {
 
                             <span>Meal Title</span>
 
-                            <div className="input-field inline">
+                            <div className="input-field">
                                 <input type="text" id="meal_title" placeholder="Meal Title"/>
                             </div>
                         </div>
 
                         <div className="input-wrapper">
                             <span>Meal Description</span>
-                            <div className="input-field inline">
+                            <div className="input-field">
                                 <textarea id="meal_description" className="materialize-textarea"
                                           placeholder="Type meal description here"></textarea>
                             </div>

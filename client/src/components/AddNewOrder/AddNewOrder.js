@@ -162,13 +162,14 @@ class AddNewOrder extends Component {
 
 
                         <div className="row">
-                            <div className="input-field col s7">
+                            <div className="input-field col s7 food_select">
                                 <select multiple="" id="food_select">
                                     <option value="1" disabled={true} selected={true}>Choose your option</option>
                                     {
                                         combos.data.map(combo => {
+                                            const img = `https://storage.googleapis.com/restaraunt_web_images/${combo.COMBO_NAME}.png`;
                                             return <option key={combo.COMBO_NAME} value={combo.COMBO_ID}
-                                                           data-icon="https://storage.googleapis.com/restaraunt_web_images/pizza-icon.png">{combo.COMBO_NAME}</option>
+                                                           data-icon={img}>{combo.COMBO_NAME}</option>
                                         })
                                     }
                                 </select>
