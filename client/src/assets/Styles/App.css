@@ -1,0 +1,26 @@
+@import "../../components/AddNewOrder/_add_new_order.css";
+
+@import "../../components/Footer/_footer.css";
+@import "../../components/Header/_header.css";
+
+@import "../../components/CustomerMeals/_customer_meals.css";
+@import "../../components/CustomerMeals/NewMeal/_new_meal.css";
+@import "../../components/CustomerMeals/Meal/_meal.css";
+
+@import "../../components/Loader/_loader.css";
+
+@import "../../components/IndexRoute/_index_route.css";
+
+body {
+    min-height: 100vh;
+}
+
+#root, .content {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
