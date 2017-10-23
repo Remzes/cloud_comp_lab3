@@ -1,0 +1,20 @@
+.add_new_order {
+    background-color: rgba(255,255,255, 0.7);
+    /*position: absolute;*/
+    height: 100%;
+    width: 100%;
+    color: #000;
+}
+
+.add_new_order input, .add_new_order label {
+    color: #000 !important;
+}
+
+.add_new_order #food_select {
+    line-height: 90px;
+}
+
+.add_new_order #food_select img {
+    height: 80px !important;
+    width: 80px !important;
+}

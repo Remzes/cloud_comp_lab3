@@ -3,6 +3,7 @@ import $ from 'jquery';
 import axios from 'axios';
 import {connect} from 'react-redux';
 import * as actions from '../../actions';
+import Loader from '../Loader/Loader';
 
 class AddNewOrder extends Component {
     constructor() {
@@ -111,9 +112,9 @@ class AddNewOrder extends Component {
             const combos = this.props.combos.data;
             console.log(this.props.provinces.data.data);
             return (
-                <section>
-                    <h4 className="center-text">{this.state.isRemember}</h4>
-                    <h4 className="center-text">{this.state.sent}</h4>
+                <section className="add_new_order">
+                    <h4 className="center">{this.state.isRemember}</h4>
+                    <h4 className="center">{this.state.sent}</h4>
                     <form className="col s12">
 
                         <div className="row">
@@ -213,7 +214,7 @@ class AddNewOrder extends Component {
             )
         }
 
-        return <div>Loading...</div>
+        return <Loader/>
     }
 }
 

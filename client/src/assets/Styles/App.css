@@ -23,4 +23,8 @@ body {
 
 main {
     flex: 1 0 auto;
+    position: relative;
+    background: url("../../assets/Images/pizza.jpg") center center no-repeat;
+    background-size: cover;
+
 }
